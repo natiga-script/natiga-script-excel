@@ -17,6 +17,8 @@
 <li><a href="#installation">طريقة التثبيت</a></li>
 </ul>
 </div>
+
+#### <div dir="rtl"><a href="http://natiga-script.cf">مثال حي للتطبيق</a></div>
 ---
 
 ### <div dir="rtl"> <a name="features"></a>مميزات التطبيق</div>
