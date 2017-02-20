@@ -4,11 +4,12 @@ $temp_url = !empty($_temp_vars['temp_url'])?$_temp_vars['temp_url']:'templates/a
 	<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-                        <li><a href="https://www.instagram.com/abood.nour/" target="_blank" class="icon alt fa-github"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/natiga-script/" target="_blank" class="icon alt fa-github"><span class="label">Github</span></a></li>
 						<li><a href="https://twitter.com/aboodnour" target="_blank" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="https://fb.me/abood.nour" target="_blank" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="https://www.linkedin.com/in/aboodnour" target="_blank" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						<li><a href="https://www.instagram.com/abood.nour/" target="_blank" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="mailto:natiga-script@gmail.com" target="_blank" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>تم التطوير بواسطة <a href="https://twitter.com/aboodnour" target="_blank">Abood Nour</a></li>
