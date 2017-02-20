@@ -1,6 +1,6 @@
 <?php if(!defined('TEMP_PATH')){die('Forbidden');}
 $temp_url = !empty($_temp_vars['temp_url'])?$_temp_vars['temp_url']:'templates/assets/';
-$_temp_vars['extra_footer'] = sprintf('<script type="text/javascript" src="%sjs/install_func.js"></script>',$temp_url); 
+$_temp_vars['extra_footer'] = sprintf('<script type="text/javascript" src="%sjs/install_func.min.js"></script>',$temp_url); 
 ?>
 	<!-- Banner -->
 				<section id="banner">
