@@ -1,0 +1,22 @@
+<?php
+//database hostname
+define('DB_HOST','{{db_hostname}}');
+//database user
+define('DB_USER','{{db_username}}');
+//database user password
+define('DB_PASS','{{db_password}}');
+//database name
+define('DB_NAME','{{db_name}}');
+//database table names prefix
+define('DB_PREFIX','{{db_prefix}}');
+//Table Header Storage File
+define('TB_HEADER_FILENAME','headers.json');
+
+if(!isset($PDO)){
+    try{
+        $PDO = new PDO(sprintf('mysql:host=%s;dbname=%s;charset=utf8;',DB_HOST,DB_NAME),DB_USER,DB_PASS);
+    }catch(\PDOException $ex){
+        die('Unable to connect to database');
+    }
+}
+?>
