@@ -11,11 +11,11 @@ $_CONFIG['allow_partial_grades'] = false;
 $_CONFIG['allow_search_all_grades'] = false;
 $_CONFIG['search_by'] = 6; // 2=> only seat_no, 4=> only name. 6 => both
 $_CONFIG['site_title'] = 'نتيجة المدرسة';
-$_CONFIG['template_assets_url'] = 'http://127.0.0.1/proj/natiga_excel/templates/assets/';
+$_CONFIG['template_assets_url'] = 'http://natiga-script.cf/templates/assets/';
 
 
 
-$_CONFIG['is_production_env'] = false;
+$_CONFIG['is_production_env'] = true;
 
 $_CONFIG['allowed_file_ext'] = array('xls','xlsx','xlsm','xltx','xltm','xlt','csv');
 $_CONFIG['allowed_file_mime'] = array('application/vnd.openxmlformats-officedocument.spreadsheetml.sheet','application/excel','application/x-excel','application/vnd.ms-excel','application/x-msexcel','text/plain','text/csv');
