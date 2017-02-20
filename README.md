@@ -59,7 +59,7 @@
 ###  <div dir="rtl"> <a name="sheet_structure"></a>إعداد ملف الـExcel</div>
 <p dir="rtl">
 غالبا لن يحتاج ملف الإكسل الخاص بك إلى إعدادات خاصة ليتم قراءته بواسطة التطبيق ولكن لضمان الحصول على أفضل نتيجة تأكد من وجود الآتي
-<ul>
+<ul dir="rtl">
 <li>تأكد من وجود 3 أعمدة أساسية في ملف الإكسل الخاص بك وهي (الاسم، رقم الجلوس، الصف الدراسي) حتى وإن كنت لا تنوي تفعيل البحث بالاسم أو رقم الجلوس سيمكنك تعديل ذلك لاحقًا في إعدادات الموقع</li>
 <li>تأكد من وجود عمود لكل مادة دراسية حتى وإن لم تكن مقررة على هذا الصف وسيتم شرح كيفية إخفاء المواد الغير مقررة لاحقا</li>
 <li>إذا كنت تريد إضافة فواصل بين المواد كما هو موضح <a href="templates/assets/images/sep_cell_example.jpg"> بالصورة</a> تأكد أيضا من إضافته كعمود مستقل</li>
@@ -79,61 +79,65 @@
 <p dir="rtl">
 يمكنك التطبيق من تغيير عدد من الخيارات لسهولة التحكم في الموقع
 لتعديل إعدادات الموقع قم بالتعديل على الخيارات الموجودة في ملف <code>includes/site_config.php</code> وهي كالآتي
-<ul>
-<li><code>$_CONFIG['allow_partial_names'] = true;</code>
+
+<ul dir="rtl">
+<li><code dir="ltr">$_CONFIG['allow_partial_names'] = true;</code>
 <br/>
+<p dir="rtl">
 يمكنك هذا الخيار من تفعيل/تعطيل البحث بجزء من الاسم بدلا عن الاسم كاملا
 قم باستبدال القيمة بـ<code>true</code> للتفعيل أو <code>false</code> للتعطيل
+</p>
 </li>
-<li><code>$_CONFIG['allow_partial_grades'] = false;</code>
+<li><code dir="ltr">$_CONFIG['allow_partial_grades'] = false;</code>
 <br/>
 يمكنك هذا الخيار من تفعيل/تعطيل البحث بجزء من اسم الصف/الفرقة بدلا عن الاسم كاملا
 قم باستبدال القيمة بـ<code>true</code> للتفعيل أو <code>false</code> للتعطيل
 </li>
-<li><code>$_CONFIG['allow_search_all_grades'] = false;</code>
+<li><code dir="ltr">$_CONFIG['allow_search_all_grades'] = false;</code>
 <br/>
 يمكنك هذا الخيار من تفعيل/تعطيل إمكانية البحث عن الطالب في كافة الصفوف
 قم باستبدال القيمة بـ<code>true</code> للتفعيل أو <code>false</code> للتعطيل
 </li>
-<li><code>$_CONFIG['search_by'] = 6;</code>
+<li><code dir="ltr">$_CONFIG['search_by'] = 6;</code>
 <br/>
 يمكنك هذا الخيار من تحديد طريقة البحث عن الطالب (بالاسم، رقم الجلوس، أو كليهما)
 قم باستبدال القيمة بـ
-<ul><li><code>2</code> للبحث برقم الجلوس فقط</li>
+<ul dir="rtl"><li><code>2</code> للبحث برقم الجلوس فقط</li>
 <li><code>4</code> للبحث بالاسم فقط </li>
 <li><code>6</code> للبحث بالاسم أو رقم الجلوس</li>
 </ul>
 </li>
-<li><code>$_CONFIG['site_title'] = 'نتيجة المدرسة';</code>
+<li><code dir="ltr">$_CONFIG['site_title'] = 'نتيجة المدرسة';</code>
 <br/>
 يمكنك هذا الخيار من التحكم في العنوان الذي يظهر في المتصفح
 فم باستبداله بالقيمة التي تناسبك
 </li>
-<li><code>$_CONFIG['template_assets_url'] = 'http://natiga-script.cf/templates/assets/';</code>
+<li><code dir="ltr">$_CONFIG['template_assets_url'] = 'http://natiga-script.cf/templates/assets/';</code>
 <br/>
 قم بتعديل هذا الخيار إلى رابط موقعك، متبوعًا بمسار تثبيت التطبيق، متبوعا بمسار ملفات قالب التصميم 
 'templates/assets/'
 <br/>
 فعلى سبيل المثال إذا كان رابط موقعك هو example.com وقمت بتثبيت التطبيق في مجلد natiga-script فسيكون الرابط 
-<code>'http://example.com/natiga-script/templates/assets/'</code>
+<code dir="ltr">'http://example.com/natiga-script/templates/assets/'</code>
 </li>
 </ul>
-<h4>إعدادات متقدمة</h4>
-<ul>
-<li><code>$_CONFIG['is_production_env'] = true;</code>
+
+<h4 dir="rtl">إعدادات متقدمة</h4>
+<ul dir="rtl">
+<li><code dir="ltr">$_CONFIG['is_production_env'] = true;</code>
 <br/>
 تعطيل هذا الخيار يسمح بعرض كافة الأخطاء التي تحدث في التطبيق.
 قم باستبدال القيمة بـ<code>true</code> للتفعيل أو <code>false</code> للتعطيل
 </li>
-<li><code>$_CONFIG['memory_limit'] = '1024M';</code>
+<li><code dir="ltr">$_CONFIG['memory_limit'] = '1024M';</code>
 <br/>
 يتحكم هذا الخيار في مساحة الذاكرة المسموح بها للتطبيق، في بعض الحالات النادرة قد تحتاج إلى تعديل قيمة هذا الخيار إذا كان حجم ملف الإكسل ضخم جدًا
 </li>
-<li><code>$_CONFIG['allowed_file_ext'] = ...;$_CONFIG['allowed_file_mime']=...;</code>
+<li><code dir="ltr">$_CONFIG['allowed_file_ext'] = ...;$_CONFIG['allowed_file_mime']=...;</code>
 <br/>
 يتحكم هذين الخيارين في أنواع الملفات المسموح برفعها على الموقع . يفضل تركها كما هي لأسباب أمنية
 </li>
-<li><code>$_CONFIG['magic_number'] = 0.0123456789;</code>
+<li><code dir="ltr">$_CONFIG['magic_number'] = 0.0123456789;</code>
 <br/>
 لن تحتاج إلى تعديل قيمة هذا الحقل ولكن من مبدأ العلم بالشئ. عند تعيين قيمة أيّ خلية إلى هذه القيمة. سيتم عرض هذا العمود كفاصل وليس كمادة أي لن تظهر درجات هذا العمود لهذا الطالب
 </li>
